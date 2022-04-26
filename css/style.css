@@ -1,118 +1,21 @@
-body{ display: flex; flex-wrap: wrap; justify-content: center; background: grey; padding-top: 20px;
-    background: url(../img/dog.jpg);
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.first-column {
+    background: green;
+    color: white;
+min-height:100px;
+    border-width:2px;
+    border-style: solid;
+
     
-    /*   https://media.istockphoto.com/vectors/travel-concept-seamless-pattern-abstract-airplane-routes-travel-and-vector-id936346770?k=20&m=936346770&s=612x612&w=0&h=pNoiIGyr4aF7H_gmwI38xlKT4oOCouCYj8Tw0WaKYhI= */
-    
-    }
-    
-    .card{margin-top: 50px;
-    background: #17141d;
-    background: white;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
-    grid-template-areas: "image" "text" "bottom";
-    font-family: roboto;
-    border-radius: 18px;
-    box-shadow: -1rem 0 3rem #000;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.6s ease;
-      //color: white;
-    }
-    
-    .card-img{
-      grid-area: image;
-      background: linear-gradient(#fff0 0%, #fff0, 70%, #1d1d1d 100%), url("../img/timberman.jpg");
-      background-size: cover;
-    }
-    
-    .card-discription{
-      grid-area: text;
-      font-family: roboto;
-      margin-top: -10px;
-    }
-    
-    .card-discription > p{
-    margin: 15px; margin-top: -10px;
-    }
-    
-    #visit-header, #visit-state{
-      font-family: arial;
-      text-transform: uppercase;
-    }
-    
-    #visit-state{font-size: 18px;
-    margin-top: -18px; margin-bottom: 20px;
-     color: #aaa;
-    }
-    
-    #booknowbtn{
-     background: #e9443c;
-     grid-area: bottom;
-     border: none;
-     font-size: 20px;
-     color: white;
-     margin-top: 30px;
-    }
-    
-    #booknowbtn:hover{cursor: pointer; background: red;}
-    
-    .card:hover{
-      transform: translateY(-1rem);
-    }
-    
-    .card:hover~.card{
-      transform: translateX(130px);
-    }
-    
-    .card:not(:first-child){
-      margin-left: -130px;
-    }
-    
-    
-    
-    /* LOCATION IMG */
-    #sb{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4P8SLcRgdYxPK1j-Sbpdh5sA-RaNG4h-sA&usqp=CAU")}
-    /* //https://prod-virtuoso.dotcmscloud.com/dA/b3bd129b-efda-486b-8290-ccb35cd0f167/previewImage/MissionSantaBarbara_hero.jpg */
-    #yosemite{background-image: url("https://zoom-polska.pl/wp-content/uploads/2020/10/Zoom-End-to-End.png")}
-    
-    #marin{background-image: url(https://static2.redcart.pl/templates/images/thumb/21268/1024/1024/pl/0/templates/images/products/21268/5aa49965f8e3e7cf936cdc1b5bf974ce.jpg")}
-    
-    a{text-decoration: none;
-    color: white;}
-    
-    /* RGB */
-    
-    .rgb::after {
-      content:"";
-      background: linear-gradient(45deg,
-      #ff0000 0%, 
-      #ff9a00 10%,
-      #d0de21 20%,
-      #4fdc4a 30%, 
-      #3fdad8 40%,
-      #2fc9e2 50%, 
-      #1c7fee 60%, 
-      #5f15f2 70%, 
-      #ba0cf8 80%, 
-      #fb07d9 90%, 
-      #ff0000 100%  )
-      repeat 0% 0% / 300% 100%;
-      position: absolute;
-      inset: -3px;
-    } 
-    
-    @keyframes rgb {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-    
-    .rgb::after {
-    ...
-      border-radius: 16px;
-      filter: blur(8px);
-      transform: translateZ(-1px); /*or z-index */
-      animation: rgb 6s linear infinite;
-    }
+    background: #5851ff;
+}
+.second-column {
+
+  border-style: solid;
+  background: green;
+  border-width: 2px;
+  color: white;
+}
