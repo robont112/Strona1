@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+  </head>
+  <body>
+ 
 
-    <link rel="stylesheet" href="css/style.css">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-
-</head>
-<body>
-  
-  <div class="container"></div>
-  
-
-    <div class="row header">
-      <div class="col-xs-12">
-        <h1>Bootstrap 4 12-Column Layout </h1>
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html" target="page">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="link1.html" target="page">BMW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="link2.html" target="page">Dacia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="link3.html" target="page">Skoda</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
   
-    <div class="row">
-      <div class="col-sm-12 col-lg-1 col-lg32 first-column">
-        <img class="image" src="https://cdn.boop.pl/uploads/2021/10/ny6j43ut-743x418.jpg" >
-      </div>
-      <div class="col-sm-12 col-lg-1 col-lg-6 second-column">
-        <img class="image" src="http://zakopizapomnij.pl/wp-content/uploads/2019/08/Notokoty-Maj-25-%E2%80%94-kopia.jpg" >
-      </div>
-      <div class="col-sm-12 col-lg-1 col-lg-3 first-column">
-        <img class="image" src="https://m.sadeczanin.info/sites/default/files/journos/user14/2019/12/0p5a5356-01.jpeg" >
-      </div>
-      
-  
-</body>
+</header>
+
+
+
+<iframe name="page" style="width:100% ; height:800px" src="home.html" />
+
+
+<script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
 </html>
