@@ -15,130 +15,54 @@
   <!-- MDB -->
   <link rel="stylesheet" href="css/mdb.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
-
+  
   <style>
-    a{
-      color: darkolivegreen !important;
+    td {
+     border: 1px solid black ; 
+     width: 300px;
+     height: 300px;
+     font-size: 40px;
+     text-align: center;
     }
+    .winColor{
+      font-size: 125px;
+      color:green;
 
-    .primaryDiv {
-      margin: 15px;
-      margin-top: 13px;
     }
-
-    .primaryIcons {
-      padding: 13px;
+    .visibleButton{
+      display:block
     }
-
-
+    .invisibleButton{
+      display:none
+    }
   </style>
 </head>
 
 <body>
+  <button   class="invisible" id="resetButton">Reset</button>
+ 
+<table id="table">
+         <tr>
+           <td id="p1"></td>
+           <td id="p2"></td>
+           <td id="p3"></td>
+         </tr>
+         <tr>
+           <td id="p4"></td>
+           <td id="p5"></td>
+           <td id="p6"></td>
+         </tr>
+         <tr>
+           <td id="p7"></td>
+           <td id="p8"></td>
+           <td id="p9"></td>
+         </tr>
+       </table>
+
+      
 
 
-<!-- STREFA NAVABARA -->  
-  <div class="row d-flex flex-wrap bd-highlight primaryDiv">
-
-    <div class="order-3 order-lg-1 col-3 col-lg-3 p-1  ">
-        <a href=""><i class="fa-solid fa-grip primaryIcons"></i></a>
-
-        <a href=""><i class="fa-solid fa-cloud-sun-rain" ></i></a>
-    </div>
-
-    <div class="order-1 order-lg-2 col-12 col-lg-6 text-center">
-      <form class="d-flex input-group w-auto">
-        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
-        <span class="input-group-text border-0" id="search-addon">
-          <i class="fas fa-search"></i>
-        </span>
-      </form>
-    </div>
-
-    <div class="order-3 order-lg-3 col-9 col-lg-3 ">
-    <div class="row">
-
-      <div class="col-12" style="text-align:right">
-        <a href=""><button type="button" class="btn btn-outline-dark btn-rounded" data-mdb-ripple-color="dark">Zaloguj się<i class="fa-solid fa-user-gear" style="padding-left: 8px;"></i></button></a>
-
-
-          <a href=""><i class="fa-solid fa-bell primaryIcons"></i></a>
-
-          <a href=""><i class="fa-solid fa-gear"></i></a>
-      </div> 
-
-
-      </div>
-  </div>
-</div>
-
-
-<div class="row d-flex flex-wrap bd-highlight primaryDiv">
-
-      <div class="order-2 order-lg-1 col-3 col-lg-3">
-         
-      </div>
-  
-      <div class="order-1 order-lg-2 col-12 col-lg-6 text-center">
-    <style>    
-   .whiteButton {
-    background-color:rgb(252, 235, 5);
-    width: 40px;
-  }
-  .imageSize {
-    width: 25px;
-  }
-  .buttonFull {
-    color:rgb(0, 0, 0) ;
-
-  }
-</style>
-
-<div class="col-12 order-4 d-flex justify-content-center">
-<div class="buttonFull m-3">
-<div class="d-flex justify-content-center">
-<div class="d-flex  whiteButton p-2 rounded-2">
-<img class="imageSize" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/BB14sqny.img" />
-</div>
-</div>
-<div class="text-center">Media expert</div>
-</div>
-<div class="buttonFull m-3">
-<div class="d-flex justify-content-center">
-<div class="d-flex  whiteButton p-2 rounded-2 ">
-<img class="imageSize" src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAV495f.img" />
-</div>
-</div>
-<div class="text-center">Allegro</div>
-</div>
-</div>
-
-      </div>
-      <div class="order-1 order-lg-2 col-12 col-lg-12 text-center">
-        <button type="button" class="btn btn-outline-dark">Mój Kanał</button>
-        <button type="button" class="btn btn-outline-dark">Pogoda</button>
-        <button type="button" class="btn btn-outline-dark">Sport</button>
-        <button type="button" class="btn btn-outline-dark">Finanse</button>
-        <button type="button" class="btn btn-outline-dark">Rozrywka</button>
-
-
-      </div>
-  
-      <div class="order-3 order-lg-3 col-9 col-lg-3">
-      <div class="row">
-  
-  
-           <div class="col-12" style="text-align:right">
-    
-          </div>  
-          
-        </div>
-      </div>
-    </div>
-    <button  class=" table-dark" id="nazwa" >test</button>
-
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<script type="text/javascript" src="js/taktasd.js"></script>
+<script type="text/javascript" src="js/app.js" />
 </body>
 
 </html>
