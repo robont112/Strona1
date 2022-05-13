@@ -47,6 +47,7 @@ function  clickField(e){
 
             document.getElementById("p"+x).innerHTML = '<div class="winColor">x</div>' ;
           }
+          table.removeEventListener("click",clickField);
         document.getElementById("resetButton").className = "visibleButton";
 
 
@@ -58,6 +59,7 @@ function  clickField(e){
      
 
     }
+    table.removeEventListener("click",clickField);
     document.getElementById("resetButton").className = "visibleButton";
 }
     if(wyn3 == "xxx"){  
@@ -67,35 +69,40 @@ function  clickField(e){
   
 
     }
+    table.removeEventListener("click",clickField);
     document.getElementById("resetButton").className = "visibleButton";
 }
     if(wyn4 == "xxx"){  
-        for(x=4 ; x< 7 ; x++ ){
-
-            document.getElementById("p"+x).innerHTML = '<div class="winColor">x</div>' ;
-     
-
-    }
-    document.getElementById("resetButton").className = "visibleButton";
-}
-    if(wyn5 == "xxx"){  
-        document.getElementById("p2").innerHTML = '<div class="winColor">x</div>' ;
-        document.getElementById("p5").innerHTML = '<div class="winColor">x</div>' ;
-        document.getElementById("p8").innerHTML = '<div class="winColor">x</div>' ;
+        for(x=1 ; x<8 ; x+=3){
+            document.getElementById("p"+x).innerHTML = '<div class="winColor">x</div>'
+        }
+        table.removeEventListener("click",clickField);
         document.getElementById("resetButton").className = "visibleButton";
-
     }
+
+        if(wyn5 == "xxx"){
+            for(x=2 ; x<9 ; x+=3){
+                document.getElementById("p"+x).innerHTML = '<div class="winColor">x</div>'
+            }
+            table.removeEventListener("click",clickField);
+            document.getElementById("resetButton").className = "visibleButton";
+        }
+
+
     if(wyn6 == "xxx"){  
-        document.getElementById("p3").innerHTML = '<div class="winColor">x</div>' ;
-        document.getElementById("p6").innerHTML = '<div class="winColor">x</div>' ;
-        document.getElementById("p9").innerHTML = '<div class="winColor">x</div>' ;
+        for(x=3 ; x<10 ; x+=3){
+            document.getElementById("p"+x).innerHTML = '<div class="winColor">x</div>'
+        }
+        table.removeEventListener("click",clickField);
         document.getElementById("resetButton").className = "visibleButton";
+    }
 
     }
     if(wyn7 == "xxx"){  
-        document.getElementById("p1").innerHTML = '<div class="winColor">x</div>' ;
-        document.getElementById("p5").innerHTML = '<div class="winColor">x</div>' ;
-        document.getElementById("p9").innerHTML = '<div class="winColor">x</div>' ;
+        for(x=1 ; x<10 ; x+=2){
+            document.getElementById("p"+x).innerHTML = '<div class="winColor">x</div>'
+        }
+        table.removeEventListener("click",clickField);
         document.getElementById("resetButton").className = "visibleButton";
 
     }
@@ -185,4 +192,4 @@ function  clickField(e){
     
     
 
-}
+
