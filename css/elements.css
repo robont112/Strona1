@@ -1,0 +1,211 @@
+.autocomplete-items {
+  color:black ;
+}
+   
+.checked{
+  position:relative;
+  background-color: rgb(218, 218, 2);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+.container {
+	display: flex;
+}
+
+/*weight of element*/
+.dr {
+	text-align: right;
+	font-size:1vmin;
+}
+
+/*symbol name*/
+.symbol{
+  font-size:2vmin;
+  text-align: center
+}
+
+/*num of element*/
+.num_of_ele{
+  position: absolute;
+  left:0.1vmin;
+  bottom: 0.1vmin;
+
+  font-size: 1vmin;
+  text-align: left;
+}
+
+.green {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.dark_green {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.lime_green {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.pink{
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.blue {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.orange {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.dark_orange {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.red {
+  position:relative;
+  background-color:rgb(192, 187, 187) ;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.dark_red {
+  position:relative;
+  background-color: rgb(192, 187, 187) ;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.yellow {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+.invis {
+  position:relative;
+  background-color: rgb(192, 187, 187);
+  opacity: 0;
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+
+p.gone{
+	visibility: hidden;
+}
+.start{
+  width: 15%;
+}
+
+#inputhide{
+  display: none;
+}
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+textarea:focus, input:focus{ outline: none; }
