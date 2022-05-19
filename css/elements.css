@@ -1,7 +1,9 @@
 .autocomplete-items {
   color:black ;
 }
-   
+.hide {
+  display: none !important; 
+}
 .checked{
   position:relative;
   background-color: rgb(218, 218, 2);
