@@ -1,5 +1,6 @@
 var pierwiastki = [];
 var y = 0;
+var odp1 = "" ;
 container = document.getElementsByClassName("symbol");
 // console.log(container.length);
 
@@ -19,6 +20,9 @@ for(x=0; x<pierwiastki.length; x++){
 }
 random = Math.floor(Math.random() * pierwiastki.length) ;
 console.log(pierwiastki[random]);
+
+odp1 = pierwiastek[random][1];
+console.log("odp1:"+odp1);
 
 for(x = 0 ;  x < container.length ;  x++){
 
@@ -47,3 +51,65 @@ function gameStart(e){
     inputAuto.classList.remove("hide");
 
 }
+function checkQestion(event){
+if(event.keyCode == 13){
+
+    console.log("działa");
+
+
+
+    inputAuto = document.getElementById("inputAuto").value;
+    console.log(inputAuto)
+
+    random = Math.floor(Math.random() * pierwiastki.length) ;
+    console.log(pierwiastki[random]);
+    
+    odp1 = pierwiastek[random][1];
+    console.log("odp1:"+odp1);
+    
+    for(x = 0 ;  x < container.length ;  x++){
+    
+        if(container[x].textContent == pierwiastki[random])
+        wylosowany = container[x];
+    }
+    console.log(wylosowany)
+    wylosowany = wylosowany.parentNode ;
+    
+    wylosowany.setAttribute("class","checked");
+    console.log(wylosowany);
+    
+    if(odp1 == inputAuto){
+        wylosowany.classList.remove("checked");
+     
+        wylosowany.classList.add("goodAnswer");
+    
+        inputAuto = document.getElementById("inputAuto").value;
+        console.log(inputAuto)
+    }
+    if(odp1 != inputAuto){
+        wylosowany.classList.remove("checked");
+     
+        wylosowany.classList.add("badAnswer");
+    
+        inputAuto = document.getElementById("inputAuto").value;
+        console.log(inputAuto)
+    
+        
+    }
+    
+   
+
+
+}
+    
+    
+}
+
+
+
+
+
+
+
+
+

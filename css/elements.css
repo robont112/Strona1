@@ -13,6 +13,25 @@
   margin: 2px;
   float: left;
 }
+
+.goodAnswer{
+  position:relative;
+  background-color: rgb(1, 238, 119);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
+.badAnswer{
+  position:relative;
+  background-color: rgb(255, 0, 0);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
 .container {
 	display: flex;
 }
@@ -211,3 +230,4 @@ input[type=submit] {
   color: #ffffff;
 }
 textarea:focus, input:focus{ outline: none; }
+
