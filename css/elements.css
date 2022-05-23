@@ -157,7 +157,15 @@
   margin: 2px;
   float: left;
 }
-
+.grey {
+  position:rgb(192, 187, 187);
+  background-color: rgb(192, 187, 187);
+  width: 5vw;
+  height: 5vh;
+  padding: 2px;
+  margin: 2px;
+  float: left;
+}
 .invis {
   position:relative;
   background-color: rgb(192, 187, 187);

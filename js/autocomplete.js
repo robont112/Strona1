@@ -1,7 +1,7 @@
 data = [];
 
-for(x = 0; x < pierwiastek.length; x++){
-  data.push(pierwiastek[x][1]);
+for(x = 0; x < elements.length; x++){
+  data.push(elements[x][1]);
 }
 
 function autocomplete(inp, arr) {
