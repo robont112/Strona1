@@ -26,9 +26,13 @@
 <body background="" style="background-color:rgb(0, 0, 0);">
 
 	<div id="statistic" class="text-center">
-		<h1>Liczba punków: </h1>
+		<h1 class="hide" id="licz">Liczba punków: </h1>
+
 		
 	</div>
+
+	<p class="hide"  id="demo"></p>
+
 <!--row 1-->
 <div class="container">
 	<div  class="green"> <div class="dr"><small>1.008</small></div> <div class="symbol"><b>H</b></div>  <div class="num_of_ele"><small>1</small></div></div>
@@ -274,8 +278,10 @@
 	  <button id="resetBtn" type="button" class="btn btn-primary hide">
 		Reset
 	  </button>
+	  
 	  <div id="input" class="easy d-flex justify-content-center">
-			<div class="autocomplete" style="width:300px;">
+			
+		<div class="autocomplete" style="width:300px;">
 			  <input  class="hide" onkeypress="checkQestion(event)"  id="inputAuto" type="text" name="myCountry" placeholder="">
 			</div>
 		  </form>
@@ -301,6 +307,7 @@
 		  </div>
 		</div>
 	  </div>
+
 
 	  <script src="/js/elements.js"></script>
 	  <script src="/js/autocomplete.js"></script>

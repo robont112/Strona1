@@ -238,4 +238,8 @@ input[type=submit] {
   color: #ffffff;
 }
 textarea:focus, input:focus{ outline: none; }
-
+p {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 0px;
+}

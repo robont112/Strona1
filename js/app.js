@@ -4,6 +4,9 @@ var answer = "";
 var y = 0;
 var k = 0;
 var point = 0;
+var timer = 0 ; 
+var reward = 0;
+
 container = document.getElementsByClassName("symbol");
 
 for(x=0; x<container.length; x++){
@@ -40,10 +43,14 @@ medium = document.getElementById("medium");
 hard = document.getElementById("hard");
 resetBtn = document.getElementById("resetBtn");
 
+
 easy.addEventListener("click",gameStart);
 medium.addEventListener("click",gameStart);
 hard.addEventListener("click",gameStart);
 resetBtn.addEventListener("click",resetGame);
+
+
+   
 
 function resetGame(){
     for(x = 0; x < elements.length; x++){
@@ -52,6 +59,11 @@ function resetGame(){
         elementsTable[x].parentNode.classList.remove("checked");
         elementsTable[x].parentNode.classList.add("grey");
         elementRandom = [];
+        point = 0;
+        statistic.innerHTML = "<h1>Liczba punków: "+point + "</h1>" ;
+        if(demo.getAttribute("class") != "hide"){
+            countDownDate = new Date().getTime()+60*1000;
+        }
     }
 }
 
@@ -61,6 +73,13 @@ function gameStart(e){
     document.getElementById("startButton").classList.add("hide");
     document.getElementById("resetBtn").classList.remove("hide");
     document.getElementById("inputAuto").classList.remove("hide");
+    document.getElementById("demo").classList.remove("hide");
+    document.getElementById("licz").classList.remove("hide");
+    if(demo.getAttribute("class") != "hide"){
+        countDownDate = new Date().getTime()+60*1000;
+    }
+
+
 }
 function checkQestion(event){
     if(event.keyCode == 13){
@@ -70,6 +89,8 @@ function checkQestion(event){
             randomElement.classList.remove("checked");
             randomElement.classList.add("goodAnswer");
             point++;
+            
+            
         }
         else{
             randomElement.classList.remove("checked");
@@ -80,4 +101,35 @@ function checkQestion(event){
         randomElements();
     }
 }
+
+// Set the date we're counting down to
+var countDownDate = new Date().getTime()+60*60*1000;
+	  
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var minutes = Math.floor((distance % ( 30)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  
+  document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+  
+  
+  
+  
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
 
