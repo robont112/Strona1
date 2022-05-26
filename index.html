@@ -288,7 +288,7 @@
 	  </div>
 	  
 	  <!-- Modal -->
-	  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		  <div class="modal-content">
 			<div class="modal-header">
@@ -297,7 +297,7 @@
 			</div>
 			<div class="modal-body text-center">
 			<button type="button" id="easy" class="btn easy" data-mdb-dismiss="modal" aria-label="Łatwy">Łatwy</button>
-			<button type="button" id="medium" class="btn" data-mdb-dismiss="modal" aria-label="Śgreyni">Śgreyni</button>
+			<button type="button" id="medium" class="btn" data-mdb-dismiss="modal" aria-label="Śgreyni">Średni</button>
 			<button type="button" id="hard" class="btn" data-mdb-dismiss="modal" aria-label="trudny">Trudny</button>
 	
 			</div>
@@ -307,9 +307,56 @@
 		  </div>
 		</div>
 	  </div>
-<div > 
+
+	  <div id="slajd" class="hide" style="width: 800px; margin-left: 30%;">
+		<div class="grid-container ">
+			
+				
+        <div class="grid-item">
+           <button   onclick="plusSlides(-1)"> ◀</button>
+
+        </div>
+        <div class="grid-item">
+            <div class="slide1 mySlides">
+                <img src="img/10s.jpg" alt="" style="width: 90px;">
+                Nagroda-> +10 sekund 
+				<button></button>
+            </div>
+
+            <div class="slide2 mySlides">
+                <img src="img/crosshair.png" alt="" style="width: 90px;">
+				Wybierz pierwiastek
+            </div>
+
+            <div class="slide3 mySlides">
+				<img src="img/10s.jpg" alt="" style="width: 90px;">
+				cos tam
+            </div>
+
+        </div>
+
+        <div class="grid-item">
+			<button onclick="plusSlides(1)">▶</button>
+        </div>
+
+      </div>
+      <div class="grid-container2">
+        <div class="grid-item"><div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		  </div></div>
+        </div></div>
+
+
+
+
+
+
+			
+
 	
-	<img src="img/RODO.png" width="300" height="400" alt="Tutaj jest obrazek"></div>
+	<img  id="rodo" class="hide" src="img/RODO.png" width="300" height="400" alt="Tutaj jest obrazek"></div>
 
 	  <script src="/js/elements.js"></script>
 	  <script src="/js/autocomplete.js"></script>
