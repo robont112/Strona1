@@ -6,6 +6,7 @@ var k = 0;
 var point = 0;
 var timer = 0 ; 
 var reward = 0;
+var countDownDate = new Date().getTime()+120*1000;
 
 container = document.getElementsByClassName("symbol");
 
@@ -93,24 +94,38 @@ function checkQestion(event){
             
             document.getElementById("slajd").classList.remove("hide");
 
-
             
+              
         }
+            
+     
         else{
             randomElement.classList.remove("checked");
             randomElement.classList.add("badAnswer");
+
         }
         statistic.innerHTML = "<h1>Liczba punków: "+point + "</h1>" ;
         
         randomElements();
+      }
     }
-}
+
+
+
+
+
+
 
 // Set the date we're counting down to
 var countDownDate = new Date().getTime()+60*60*1000;
 	  
 // Update the count down every 1 second
 var x = setInterval(function() {
+
+
+
+
+
 
   // Get today's date and time
   var now = new Date().getTime();
@@ -119,8 +134,8 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
     
   // Time calculations for days, hours, minutes and seconds
-  var minutes = Math.floor((distance % ( 30)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Output the result in an element with id="demo"
   
@@ -166,6 +181,10 @@ function showSlides(n) {
 }
 
 
+timer1.addEventListener("click", addTime);
+function addTime() {
+  countDownDate += 10*1000;
+}
 
 
 
