@@ -66,8 +66,14 @@
 } 
 
 
-
-
-
+.flex2 {
+  flex: 2;
+  margin: 70px;
+ 
+}
+.flex2 > * {
+  font-size: 15px;
+  
+}
 
 

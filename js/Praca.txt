@@ -1,0 +1,23 @@
+1. 
+INSERT INTO ksiazka(`imieautora`, `nazwiskoautora`, `tytul`, `cena`, `rokwydania`, `wydawnictwo`) 
+VALUES ('Jan', 'Michalak', 'Zaawansowane programowanie w PHP', '65', '2018', 'EdukacjaPL');
+
+2.
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="Albatros"
+UNION
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="EdukacjaPL";
+
+3.
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="Albatros"
+UNION ALL
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="EdukacjaPL";
+
+4. 
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="Albatros"
+INTERSECT
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="EdukacjaPL";
+
+5.
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="Albatros"
+EXCEPT
+SELECT imieautora, nazwiskoautora, tytul FROM ksiazka WHERE wydawnictwo="EdukacjaPL";
